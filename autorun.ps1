@@ -33,7 +33,7 @@ function Invoke-RemoteScript {
 Write-Log "Pendrive autorun triggered at $(Get-Date)"
 
 # Specify your remote script URL here
-$remoteScriptUrl = https://raw.githubusercontent.com/Miths-Web/remote-scripts/refs/heads/main/autorun.ps1
+$remoteScriptUrl = "https://raw.githubusercontent.com/Miths-Web/remote-scripts/refs/heads/main/autorun.ps1"
 
 Invoke-RemoteScript -ScriptUrl $remoteScriptUrl
 
